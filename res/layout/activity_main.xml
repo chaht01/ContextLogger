@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+       android:id="@+id/file_name"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="열람하고자 하는 파일 이름을 입력하세요.\n예 : 09_50.txt" />
+    
+		<Button
+       android:id="@+id/read_file_btn"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="저장한 내용 읽기" />
+		<TextView
+       android:id="@+id/read_file_result"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:stackFromBottom="true"
+       android:maxLines = "10"
+    	 android:transcriptMode="alwaysScroll" 
+        />
+</LinearLayout>
